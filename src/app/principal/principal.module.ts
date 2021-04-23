@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PrincipalComponent } from './principal.component';
+import { PrincipalService } from './principal.service';
 
 
 
@@ -13,6 +14,9 @@ import { PrincipalComponent } from './principal.component';
   ],
   exports: [
     PrincipalComponent
+  ],
+  providers: [
+    PrincipalService
   ]
 })
 export class PrincipalModule { }
