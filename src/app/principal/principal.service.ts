@@ -66,7 +66,7 @@ export class PrincipalService {
 
     this.tabuleiro[posX][posY] = this._jogador;
     this.qtdMovimentos++;
-    this.vitoria = this.fimJogo(posX, posY, this.tabuleiro, this.jogador);
+    this.vitoria = this.fimJogo(posX, posY, this.tabuleiro, this._jogador);
     this._jogador = (this._jogador === this.X) ? this.O : this.X;
     
     if (!this.vitoria && this.qtdMovimentos < 9){
