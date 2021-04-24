@@ -51,7 +51,7 @@ export class PrincipalService {
   }
 
   get jogador(): number {
-    return this.jogador;
+    return this._jogador;
   }
 
   iniciarJogo(): void {
